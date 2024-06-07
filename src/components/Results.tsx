@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { AppContext } from "@/context";
-import "@/styles/Results.css";
 
 export const Results = () => {
   const { state } = useContext(AppContext);
@@ -10,33 +9,33 @@ export const Results = () => {
   };
 
   return (
-    <div className="results">
-      <div className="results-item">
+    <div className="px-[1.25rem] py-[2.5rem] text-[#65451F]">
+      <div className="flex justify-between my-[0.625rem] mx-0">
         <div>Total principal amount to pay</div>
         <div>
           {state.currency} {getFormattedNumber(state.principalAmount)}
         </div>
       </div>
 
-      <div className="results-item">
+      <div className="flex justify-between my-[0.625rem] mx-0">
         <div>Total interest to pay</div>
         <div>
           {state.currency} {getFormattedNumber(state.interestAmount)}
         </div>
       </div>
-      <hr></hr>
-      <div className="results-item total-amt">
+      <hr className="border-2 border-[#765827]"/>
+      <div className="flex justify-between my-[0.625rem] mx-0 font-bold">
         <div>Total Loan amount to pay</div>
         <div>
           {state.currency} {getFormattedNumber(state.totalAmount)}
         </div>
       </div>
 
-      <div className="monthly-payment">
+      <div className="mt-[4rem] text-center">
         <div>Monthly payment</div>
-        <div className="amount">
-          <span className="currency">{state.currency}</span>{" "}
-          <span className="value">
+        <div>
+          <span className="font-bold align-[20px]">{state.currency}</span>{" "}
+          <span className="font-bold text-[3rem] mt-[-20px]">
             {getFormattedNumber(state.monthlyPayment)}
           </span>
         </div>

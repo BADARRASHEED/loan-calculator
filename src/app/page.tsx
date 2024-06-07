@@ -18,17 +18,17 @@ function App() {
   const [state, dispatch] = useState(initialState);
 
   return (
-    <div className="m-0 p-0">
+    <div className="m-0 p-0 bg-[#FAEAB1]">
       <header>
         <Header />
       </header>
       <AppContext.Provider value={{ state, dispatch }}>
-        <main>
+        <main className="bg-[#FAEAB1] h-screen">
           <section>
-            <div className="w-[62rem] m-auto mt-[2rem]">
+            <div className="w-[62rem] m-auto mt-[2rem] text-[#765827]">
               This is a{" "}
               <span className="font-extrabold">
-                SIMPLE INTEREST LOAN PAYMENT CALCULATOR.
+                Simple INTEREST LOAN PAYMENT CALCULATOR.
               </span>{" "}
               This calculator will help you determine the monthly payments on a
               loan. Simply enter the loan amount, term and interest rate in the
@@ -37,8 +37,8 @@ function App() {
           </section>
 
           <section>
-            <div className="w-[62rem] flex my-[40px] mx-auto box-border shadow-md shadow-rose-300 rounded-md">
-              <div className="w-[50%] p-5 box-border bg-[#f3f4f8]">
+            <div className="w-[62rem] flex my-[40px] mx-auto box-border shadow-md shadow-[#765827] rounded-md bg-[#EAC696]">
+              <div className="w-[50%] p-5 box-border">
                 <Form />
               </div>
               <div className="w-[50%] p-5 box-border">

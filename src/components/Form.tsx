@@ -8,9 +8,9 @@ export const Form = () => {
   const { dispatch, state } = useContext(AppContext);
 
   const [principal, setPrincipal] = useState<number>(5000);
-  const [loanTermInYears, setLoanTermInYears] = useState<number>(4);
-  const [loanTermInMonths, setLoanTermInMonths] = useState<number>(48);
-  const [interestRate, setInterestRate] = useState<number>(6.5);
+  const [loanTermInYears, setLoanTermInYears] = useState<number>(1);
+  const [loanTermInMonths, setLoanTermInMonths] = useState<number>(12);
+  const [interestRate, setInterestRate] = useState<number>(12);
 
   const handleLoanTermInYears = (e: ChangeEvent<HTMLInputElement>) => {
     const termInYears: number = Number(e.target.value);
@@ -55,7 +55,7 @@ export const Form = () => {
   }, []);
 
   return (
-    <div>
+    <div className="text-[#65451F]">
       <div className="form-item loan-amt">
         <label htmlFor="loanAmount">Loan amount</label>
         <input

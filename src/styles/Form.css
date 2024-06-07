@@ -12,7 +12,7 @@
   width: 100%;
   outline: none;
   margin-bottom: 15px;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #765827;
   border-radius: 5px;
   font-size: 16px;
   padding: 12px;
@@ -31,7 +31,7 @@
   right: 0;
   top: 28px;
   padding: 12px;
-  background-color: #179B36;
+  background-color: #65451f;
   color: #fff;
   font-size: 16px;
 }
@@ -41,7 +41,7 @@
 }
 
 .interest-rate::after {
-  content: '%';
+  content: "%";
   position: absolute;
   right: 15px;
   top: 42%;
@@ -53,7 +53,7 @@
 }
 
 .calculateBtn {
-  background-color: #179B36;
+  background-color: #65451f;
   color: #fff;
   font-weight: bold;
   font-size: 16px;
