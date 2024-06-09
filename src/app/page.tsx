@@ -18,14 +18,14 @@ function App() {
   const [state, dispatch] = useState(initialState);
 
   return (
-    <div className="m-0 p-0 bg-[#FAEAB1]">
+    <div className="m-0 p-0 bg-[#aed2c8]">
       <header>
         <Header />
       </header>
       <AppContext.Provider value={{ state, dispatch }}>
-        <main className="bg-[#FAEAB1] h-screen">
+        <main className="bg-[#aed2c8] h-screen">
           <section>
-            <div className="w-[62rem] m-auto mt-[2rem] text-[#765827]">
+            <div className="w-[62rem] m-auto mt-[2rem] text-[#123336]">
               This is a{" "}
               <span className="font-extrabold">
                 Simple INTEREST LOAN PAYMENT CALCULATOR.
@@ -37,7 +37,7 @@ function App() {
           </section>
 
           <section>
-            <div className="w-[62rem] flex my-[40px] mx-auto box-border shadow-md shadow-[#765827] rounded-md bg-[#EAC696]">
+            <div className="w-[62rem] flex my-[40px] mx-auto box-border shadow-md shadow-[#123336] rounded-md bg-[#FEFBF6]">
               <div className="w-[50%] p-5 box-border">
                 <Form />
               </div>

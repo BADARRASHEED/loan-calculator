@@ -55,7 +55,7 @@ export const Form = () => {
   }, []);
 
   return (
-    <div className="text-[#65451F]">
+    <div className="text-[#123336]">
       <div className="form-item loan-amt">
         <label htmlFor="loanAmount">Loan amount</label>
         <input

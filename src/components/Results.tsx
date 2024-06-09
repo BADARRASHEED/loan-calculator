@@ -9,7 +9,7 @@ export const Results = () => {
   };
 
   return (
-    <div className="px-[1.25rem] py-[2.5rem] text-[#65451F]">
+    <div className="px-[1.25rem] py-[2.5rem] text-[#123336]">
       <div className="flex justify-between my-[0.625rem] mx-0">
         <div>Total principal amount to pay</div>
         <div>
@@ -23,7 +23,7 @@ export const Results = () => {
           {state.currency} {getFormattedNumber(state.interestAmount)}
         </div>
       </div>
-      <hr className="border-2 border-[#765827]"/>
+      <hr className="border-2 border-[#123336]" />
       <div className="flex justify-between my-[0.625rem] mx-0 font-bold">
         <div>Total Loan amount to pay</div>
         <div>
