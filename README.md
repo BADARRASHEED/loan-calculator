@@ -1,1 +1,1 @@
-## Loan Caluculator ___ Badar Butt
+## Loan Caluculator
